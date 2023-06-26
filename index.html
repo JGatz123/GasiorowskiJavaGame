@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JavaScript Code Quiz</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body id="bdy">
+    <header>
+        <h6 id="hscore"> View Highscores </h6>
+        <h6 id="countdown" class="timeleft"> </h6>
+    </header>
+    <section id="intro-section">
+        <div>
+            <h1 id="gboxtit"> JavaScript Code Quiz </h1>
+            <p id="gboxdesc"> Answer the following code based questions, answering a question incorrectly will subtract time from the timer. The game will end when the timer hits 0 or you have answered all the questions</p>
+            <button id="startgame" class="btn"> Begin Game </button>
+        </div>
+    </section>
+        <section id="qbox">
+            <div id="q1" class="questions">
+                <h2> Question 1 </h2>
+                    <h3> What is the proper way to write an array </h3>
+                        <ul> 
+                            <li><button class="answrbtn1" data-correct="yes"> var colors = ["red", "orange", "yellow"] </button></li>
+                            <li><button class="answrbtn1" data-correct="no"> var colors = 1("red"), 2("orange"), 3("yellow") </button></li>
+                            <li><button class="answrbtn1" data-correct="no"> var colors = "red", "orange", "yellow" </button></li>
+                            <li><button class="answrbtn1" data-correct="no"> var colors = ("red", "orange", "yellow") </button></li>
+                        </ul>
+            </div>
+            <div id="q2" class="questions">
+                <h2> Questions 2 </h2>
+                    <h3> What operator is used to assign a value to a variable?</h3>
+                        <ul>
+                            <li><button class="answrbtn2" data-correct="no"> - </button></li>
+                            <li><button class="answrbtn2" data-correct="no"> * </button></li>
+                            <li><button class="answrbtn2" data-correct="yes"> = </button></li>
+                            <li><button class="answrbtn2" data-correct="no"> + </button></li>
+                        </ul>
+            </div>
+            <div id="q3" class="questions">
+                <h2> Question 3</h2>
+                    <h3> Where is the correct place to insert JavaScript code into an HTML document </h3>
+                        <ul>
+                            <li><button class="answrbtn3" data-correct="no"> The body section </button></li>
+                            <li><button class="answrbtn3" data-correct="yes"> Both the head section and the body section are correct </button></li>
+                            <li><button class="answrbtn3" data-correct="no"> The head section </button></li>
+                        </ul>
+            </div>
+            <div id="q4" class="questions">
+                <h2> Question 4 </h2>
+                    <h3> Inside which HTML element do we put the JavaScript? </h3>
+                        <ul>
+                            <li><button class="answrbtn4"data-correct="no"> JavaScript </button></li>
+                            <li><button class="answrbtn4" data-correct="yes"> script </button></li>
+                            <li><button class="answrbtn4" data-correct="no"> js </button></li>
+                            <li><button class="answrbtn4" data-correct="no"> scripting </button></li>
+                        </ul>
+            </div>
+            <div id="q5" class="questions">
+                <h2> Question 5 </h2>
+                    <h3> How to write an IF statement for executing some code if "i" is NOT equal to 7? </h3>
+                        <ul>
+                            <li><button class="answrbtn5" data-correct="yes"> if (i != 7) </button></li>
+                            <li><button class="answrbtn5" data-correct="no"> if i /= 7</button></li>
+                            <li><button class="answrbtn5" data-correct="no"> if i =! 7 then </button></li>
+                            <li><button class="answrbtn5" data-correct="no"> if (i <> 7) </button></li>
+                        </ul>
+            </div>
+            <div id="q6" class="questions">
+                <h2> Question 6 </h2>
+                    <h3> How does a FOR loop start? </h3>
+                        <ul>
+                            <li><button class="answrbtn6" data-correct="no"> for i = 1 to 7 </button></li>
+                            <li><button class="answrbtn6" data-correct="no"> for (i <= 7; i++) </button></li>
+                            <li><button class="answrbtn6" data-correct="no"> for (i = 0; i <= 7) </button></li>
+                            <li><button class="answrbtn6" data-correct="yes"> for (i = 0; i <= 7; i++) </button></li>
+                        </ul>
+            </div>
+        </section>
+
+        <section id="highscorebox">
+            <h2> Highscores </h2>
+            <ul id="hscorelist">
+            <!-- high scores will be added here by Javascript-->
+            </ul>
+        </section>
+
+        <script src="./assets/java/script.js"></script>
+
+  </body>

@@ -1,0 +1,57 @@
+#bdy{
+    background-color: gainsboro;
+}
+#hscore {
+    color: violet;
+}
+#hscore:hover {
+    text-decoration: underline;
+    text-shadow: 5px 5px 5px;
+    cursor: pointer;
+}
+#hscore:active {
+    color: red;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#gboxtit{
+    text-align: center;
+    display: flex;
+    width: 500px;
+    position: relative;
+    left: 42%;
+}
+#gboxdesc {
+    display:flex;
+    position: relative;
+    text-align: center;
+    width: 500px;
+    left: 35%;
+}
+.btn{
+    background-color: orchid;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 2px 2px 2px;
+    left: 47%;
+}
+header {
+    display: flex;
+    align-items: row;
+
+}
+#countdown {
+    padding-left: 90%;
+}
+
+.questions{
+display: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+#highscorebox{
+    display:none;
+}
